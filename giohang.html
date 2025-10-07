@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+
+	<title>Thế giới điện thoại</title>
+
+	<!-- Load font awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	 crossorigin="anonymous">
+
+	<!-- our files -->
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/topnav.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/taikhoan.css">
+	<link rel="stylesheet" href="css/gioHang.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<!-- js -->
+	<script src="data/products.js"></script>
+	<script src="js/classes.js"></script>
+	<script src="js/dungchung.js"></script>
+	<script src="js/giohang.js"></script>
+
+</head>
+
+<body>
+	<script> addTopNav(); </script>
+
+	<section style="min-height: 85vh">
+		<script> addHeader(); </script>
+
+		<table class="listSanPham" > </table>
+		
+	</section> <!-- End Section -->
+
+	<script>
+		addContainTaiKhoan();
+	</script>
+
+	<div class="footer"><script>addFooter();</script></div>
+
+	<i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+	<div id="popupChuyenKhoan" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; justify-content:center; align-items:center;">
+    <div style="background:#fff; padding:30px; border-radius:10px; text-align:center; position:relative;">
+        <img src="img/chuyenkhoan.png" alt="Chuyển khoản" style="max-width:300px; width:100%; margin-bottom:20px;">
+        <br>
+        <button onclick="anPopupChuyenKhoan()" style="padding:10px 30px; background:#28a745; color:#fff; border:none; border-radius:5px; font-size:18px; cursor:pointer;">
+            Đã chuyển
+        </button>
+		 <button onclick="huyPopupChuyenKhoan()" style="padding:10px 30px; background:#dc3545; color:#fff; border:none; border-radius:5px; font-size:18px; cursor:pointer;">
+            Hủy
+        </button>
+    </div>
+</div>
+</body>
+
+</html>
